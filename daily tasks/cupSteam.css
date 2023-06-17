@@ -1,0 +1,85 @@
+body{
+    height: 100px;
+    width: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(100, 181, 252);
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+}
+#steam{
+position: absolute;
+width: 120px;
+height: 120px;
+background-color: white;
+border-radius: 50%;
+margin-left: 53px;
+margin-top: -50px;
+}
+.steam1{
+    animation: steam1 2s ease-out infinite;
+}
+.steam3{
+    animation: steam1 1s ease-out infinite;
+}
+.steam2{
+    animation: steam2 3s ease-out infinite;
+}
+.steam4{
+    animation: steam2 1.2s ease-out infinite;
+}
+@keyframes steam1{
+    from{
+        transform: translateY(0) translateX(0) scale(0.25);
+        opacity: 0.25;
+    }
+    to{
+        transform: translateY(-200px) translateX(-20px) scale(1);
+        opacity: 0;
+    }
+}
+@keyframes steam2{
+    from{
+        transform: translateY(0) translateX(0) scale(0.25);
+        opacity: 0.25;
+    }
+    to{
+        transform: translateY(-200px) translateX(20px) scale(1);
+        opacity: 0;
+    }
+}
+.cup-body{
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 150px;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+}
+.handle{
+    width:40px;
+    height: 70px;
+    border-top-right-radius: 210px;
+    border-bottom-right-radius: 210px;
+    margin-left: 240px;
+    border: 10px solid rgb(255, 255, 255);
+}
+.plate{
+    margin-top: -10px;
+    border: 12px solid white;
+    width: 220px;
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+}
+.shadow{
+    border: 3px solid rgb(158, 158, 158, 0.5);
+    width: 239px;
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+}
